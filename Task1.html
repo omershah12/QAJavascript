@@ -8,6 +8,9 @@
 
         <button onclick="toUpper()">Change to Uppper Case</button>
 
+        <button onclick="pop()">pop</button>
+        <button onclick="push()">push</button>
+
     
 
         <script type="text/javascript">
@@ -80,6 +83,11 @@
         peopleFunction.occupation=z;
 
         window.alert(personTest.name +" "+ personTest.age +" "+ personTest.occupation);
+         if(personTest.age > 20 && personTest.age< 40){
+            window.alert(true);
+        }else{
+            window.alert(false);
+        }
     }
 
     // function formEdit(){
@@ -113,13 +121,32 @@
 
     // window.alert(con());
 
-
     var cars = ["Saab", "Volvo", "BMW"];
     document.getElementById("output").innerHTML = cars;
 
     
 
+    function push(){
+        cars.push("Merc");
+        document.getElementById("output").innerHTML = cars;
+    }
 
+    function pop(){
+        cars.pop();
+        document.getElementById("output").innerHTML = cars;
+    }
+
+    
+        var text="";
+        var i;
+        
+        for (i=0; i<11; i++){
+            if(i%2==0){
+            text += "Iteration "+i+"<br>";
+            }
+        }
+        document.getElementById("output").innerHTML=text;
+    
 
 </script>
 
