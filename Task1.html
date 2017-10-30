@@ -1,0 +1,146 @@
+<html lang="en">
+    <head>
+    </head>
+
+    <body>
+
+        <p id= "output"></p>
+
+        <button onclick="toUpper()">Change to Uppper Case</button>
+
+    
+
+        <script type="text/javascript">
+
+        // window.alert("Hello World")
+
+        // var string="Hello World";
+
+        // window.alert(string);
+
+        // console.log(string);
+
+        // document.write(string);
+
+        function square(n){
+
+            return n*n;
+
+        }
+
+
+        // document.getElementById("output").innerHTML
+        //  = square(5);
+
+        //  window.alert(square(5));
+
+        //  console.log(square(5));
+
+        //  document.write(square(5));
+
+        function sum (a,b,c){
+            return a+b+c;
+        }
+
+        // document.getElementById("output").innerHTML=sum(1,2,3);
+
+      
+
+     function peopleFunction(name, age, occupation){
+         var it={};
+         it.name=name;
+         it.age=age;
+         it.occupation=occupation;
+         return it;
+     }
+    
+    // var person1= people("Omer", 22, 33);
+
+    // document.getElementById("output").innerHTML= person1.name +" "+ person1.age+ " " +person1.occupation;
+
+    // person1.name = "Bob";
+
+    // window.alert(person1.name);
+
+    function addOne(){
+        window.alert(person1.age + 1);
+    }
+
+    var personTest;
+    
+
+    function form(){
+        var x = document.forms["myForm"]["name"].value;
+        var y = document.forms["myForm"]["age"].value;
+        var z = document.forms["myForm"]["occupation"].value;
+        // var person = peopleFunction(x,y,z);
+        personTest=peopleFunction(x,y,z);
+        peopleFunction.name=x;
+        peopleFunction.age=y;
+        peopleFunction.occupation=z;
+
+        window.alert(personTest.name +" "+ personTest.age +" "+ personTest.occupation);
+    }
+
+    // function formEdit(){
+    //        var x = document.forms["editForm"]["name1"].value;
+    //     var y = document.forms["editForm"]["age1"].value;
+    //     var z = document.forms["editForm"]["occupation1"].value;
+    //     // var person = peopleFunction(x,y,z);
+    //     personTest=peopleFunction(x,y,z);
+    //     peopleFunction.name=x;
+    //     peopleFunction.age=y;
+    //     peopleFunction.occupation=z;
+
+    //     window.alert(personTest.name +" "+ personTest.age +" "+ personTest.occupation);
+    // }
+
+    // var heSaid = "He said \"My name is Elliott\"";
+
+    // document.getElementById("output").innerHTML=heSaid;
+
+    // function toUpper(){
+    //     var str = heSaid.toUpperCase();
+    //     document.getElementById("output").innerHTML=str;
+    // }
+
+    // function con(){
+    //     var conStr = "Hello";
+    //     var conNum = "5";
+
+    //     return conStr + conNum;
+    // }
+
+    // window.alert(con());
+
+
+    var cars = ["Saab", "Volvo", "BMW"];
+    document.getElementById("output").innerHTML = cars;
+
+    
+
+
+
+</script>
+
+
+<br><br><br>
+<form name="myForm" onsubmit="return form()" method="post">
+    Name:<input type="text" name="name">
+    Age: <input type="text" name="age">
+    Occupation <input type="text" name="occupation">
+    <input type="submit" value="Submit">
+
+    <form name="editForm" onsubmit="return formEdit()" method="post">
+    Name:<input type="text" name="name1">
+    Age: <input type="text" name="age1">
+    Occupation <input type="text" name="occupation1">
+    <input type="submit" value="Submit">
+
+<input type="button" onclick="addOne()" value="Add one to age" />
+
+
+
+    </body>
+
+</html>
