@@ -1,0 +1,32 @@
+<html lang="en">
+    <head>
+    </head>
+
+    <body>
+
+        <p id= "output"></p>
+
+        <script ="text/javascript">
+
+            var text="";
+            var i;
+
+            for(i=1; i<101; i++){
+                if(i%3==0 && i%5==0){
+                    text += "Fizz Buzz<br>";
+                }else if(i%5==0){
+                    text += "Buzz<br>";
+                }else if(i%3==0){
+                    text += "Fizz <br>";
+                }
+                else{
+                    text += i + "<br>";
+                }
+            }
+            document.getElementById("output").innerHTML=text;
+
+        </script>
+
+    </body>
+
+</html>
